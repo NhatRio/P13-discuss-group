@@ -1,12 +1,8 @@
-# P13 Discussion Group
+# talks
 
-**Microsoft Team**: Ask Thi ([dinhanhthi@gmail.com](mailto:dinhanhthi@gmail.com)) to get the link / invitation.
-
-**Folder's structure**,
+This folder contains materials for each talk/presentation. Please name the folder in form `YYYY-MM-DD-Name-Topic`.
 
 ```
-├── docs                              # general material
-|
 ├── talks                             # presentation's material
 │   ├── YYYY-MM-DD-Name-Topic
 |   |   ├── README.md                 # presentaion's description
