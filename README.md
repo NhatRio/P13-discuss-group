@@ -6,7 +6,6 @@
 
 ```
 ├── docs                              # general material
-|
 ├── talks                             # presentation's material
 │   ├── YYYY-MM-DD-Name-Topic
 |   |   ├── README.md                 # presentaion's description
