@@ -2,12 +2,12 @@ import os
 from pathlib import Path
 import cv2 as cv
 import numpy as np
-import tifffile
 import scipy.ndimage
 
-INPUT_IMAGE = r"D:\Viet\craftmanship\tensorflow\demos\images\lenna.png"
-CONV1_WEIGHT = r"D:\Viet\craftmanship\tensorflow\demos\images\conv1.npy"
-CONV2_WEIGHT = r"D:\Viet\craftmanship\tensorflow\demos\images\conv2.npy"
+ROOT_DIR = Path(__file__).parent
+INPUT_IMAGE = os.path.join(ROOT_DIR, "images", "lenna.png")
+CONV1_WEIGHT = os.path.join(ROOT_DIR, "images", "conv1.npy")
+CONV2_WEIGHT = os.path.join(ROOT_DIR, "images", "conv2.npy")
 
 def read_image_opencv(file_name):
     image = cv.imread(file_name)
