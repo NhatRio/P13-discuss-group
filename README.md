@@ -14,7 +14,7 @@
 ├── docs                              # general material
 ├── talks                             # presentation's material
 │   ├── YYYY-MM-DD-Name-Topic
-|   |   ├── README.md                 # presentaion's description
+|   |   ├── README.md                 # presentation's description
 |   |   ├── slides                    # slides (if available)
 |   |   |   ├── README.md             # additional descrition for slides
 |   |   ├── codes                     # codes in talk
