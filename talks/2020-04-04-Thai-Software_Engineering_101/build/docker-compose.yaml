@@ -1,0 +1,39 @@
+version: '3.7'
+
+services:
+  user-service:
+    image: user-service
+    depends_on:
+      - database
+    links:
+      - "database"
+    ports:
+      - "5000:5000"
+    hostname: user-service
+    restart: always
+
+  channel-service:
+    image: channel-service
+    depends_on:
+      - database
+    links:
+      - "database"
+    ports:
+      - "5001:5001"
+    hostname: channel-service
+    restart: always
+
+  database:
+    image: mongo
+    restart: always
+    volumes:
+      - 'mongo-data:/data/db'
+      - '../mongo/mongo.sh:/docker-entrypoint-initdb.d/init-mongo.sh'
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=admin@2020
+    ports:
+      - '27017:27017'
+
+volumes:
+  mongo-data:
