@@ -11,7 +11,7 @@ click==7.1.1
 configobj==5.0.6
 configparser==4.0.2
 contextlib2==0.6.0.post1
-cryptography==2.9
+cryptography==3.2
 cycler==0.10.0
 docutils==0.16
 enum34==1.1.6
